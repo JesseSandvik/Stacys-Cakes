@@ -1,16 +1,25 @@
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import { postAdded } from "./postsSlice";
+import { selectAllUsers } from "../users/usersSlice";
 
 const AddPostForm = () => {
   const dispatch = useDispatch();
   const initialFormState = {
     title: "",
     content: "",
+    userId: "",
   };
 
   const [formData, setFormData] = useState(initialFormState);
+
+  const users = useSelector(selectAllUsers);
+
+  const canSave =
+    Boolean(formData.title) &&
+    Boolean(formData.content) &&
+    Boolean(formData.userId);
 
   const handleChange = ({ target }) => {
     console.log(formData);
@@ -26,15 +35,26 @@ const AddPostForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (formData.title && formData.content) {
-      dispatch(postAdded(formData.title, formData.content));
+      dispatch(postAdded(formData.title, formData.content, formData.userId));
       setFormData((formData) => (formData = initialFormState));
     }
   };
+
+  const usersOptions = users.map((user) => (
+    <option key={user.id} value={user.id}>
+      {user.name}
+    </option>
+  ));
 
   return (
     <section onSubmit={handleSubmit}>
       <h2>Add A New Post</h2>
       <form>
+        <label htmlFor='userId'>Title: </label>
+        <select id='postUserId' name='userId' onChange={handleChange}>
+          <option value=''></option>
+          {usersOptions}
+        </select>
         <label htmlFor='title'>Title: </label>
         <input
           id='postTitle'
@@ -50,7 +70,9 @@ const AddPostForm = () => {
           value={formData.content ? formData.content : ""}
           onChange={handleChange}
         />
-        <button type='submit'>Save Post</button>
+        <button disabled={!canSave} type='submit'>
+          Save Post
+        </button>
       </form>
     </section>
   );
