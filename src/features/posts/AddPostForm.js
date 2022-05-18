@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { nanoid } from "@reduxjs/toolkit";
 
 import { postAdded } from "./postsSlice";
 
@@ -27,12 +26,7 @@ const AddPostForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (formData.title && formData.content) {
-      dispatch(
-        postAdded({
-          id: nanoid(),
-          ...formData,
-        })
-      );
+      dispatch(postAdded(formData.title, formData.content));
       setFormData((formData) => (formData = initialFormState));
     }
   };
