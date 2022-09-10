@@ -1,0 +1,16 @@
+{
+  "plugins": ["testing-library", "jest-dom"],
+  "extends": [
+    "airbnb",
+    "airbnb-typescript-prettier",
+    "airbnb/hooks",
+    "react-app",
+    "react-app/jest",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}
