@@ -8,5 +8,6 @@ describe("<Main />", () => {
     const main = screen.getByRole("main");
 
     expect(main).toHaveClass("Testing");
+    expect(main).toHaveTextContent("testing");
   });
 });
