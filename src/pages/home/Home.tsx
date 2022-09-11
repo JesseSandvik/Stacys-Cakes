@@ -1,7 +1,8 @@
 import React from "react";
+import Main from "../../components/organisms/main/Main";
 
 function Home(): React.ReactElement {
-  return <div />;
+  return <Main className="Home">home</Main>;
 }
 
 export default Home;
