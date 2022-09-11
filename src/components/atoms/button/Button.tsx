@@ -20,7 +20,7 @@ function Button({
       className={className}
       disabled={disabled}
       id={id}
-      type={type ? "button" : "submit"}
+      type={type === "submit" ? "submit" : "button"}
     >
       {children}
     </button>
@@ -31,7 +31,7 @@ Button.defaultProps = {
   className: undefined,
   disabled: false,
   id: undefined,
-  type: undefined,
+  type: "button",
 };
 
 export default Button;
