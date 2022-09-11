@@ -31,4 +31,11 @@ describe("<Button />", () => {
 
     expect(button).toHaveAttribute("id", "test-btn-id");
   });
+  test("<Button /> component disabled when passed 'disabled' as prop", () => {
+    render(<Button disabled>this should render</Button>);
+
+    const button = screen.getByRole("button", { name: /this should render/i });
+
+    expect(button).toBeDisabled();
+  });
 });
