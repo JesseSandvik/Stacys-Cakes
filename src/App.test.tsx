@@ -16,12 +16,12 @@ describe("<App />", () => {
 
     expect(contactPageHeading).toBeInTheDocument();
 
-    const appLogo = screen.getByText("Stacy's Cakes");
+    const appLogo = screen.getByRole("link", { name: /stacy's cakes/i });
 
     userEvent.click(appLogo);
 
     const homePageHeading = await screen.findByRole("heading", {
-      name: /home/i,
+      name: /experience the magic!/i,
     });
 
     expect(homePageHeading).toBeInTheDocument();
