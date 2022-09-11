@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import NavigationLink from "../../atoms/navigationLink/NavigationLink";
 
 import "./Header.css";
 
@@ -9,24 +9,24 @@ function Header(): React.ReactElement {
       <nav>
         <ul className="Header-left-list">
           <li>
-            <NavLink to="/about">about</NavLink>
+            <NavigationLink path="/about">about</NavigationLink>
           </li>
           <li>
-            <NavLink to="/gallery">gallery</NavLink>
+            <NavigationLink path="/gallery">gallery</NavigationLink>
           </li>
         </ul>
         <div className="Header-center-logo">
-          <NavLink to="/">
+          <NavigationLink path="/">
             <span className="title">Stacy&apos;s Cakes</span>{" "}
             <span className="location">New York</span>
-          </NavLink>
+          </NavigationLink>
         </div>
         <ul className="Header-right-list">
           <li>
-            <NavLink to="/menu">menu</NavLink>
+            <NavigationLink path="/menu">menu</NavigationLink>
           </li>
           <li>
-            <NavLink to="/contact">contact</NavLink>
+            <NavigationLink path="/contact">contact</NavigationLink>
           </li>
         </ul>
       </nav>
