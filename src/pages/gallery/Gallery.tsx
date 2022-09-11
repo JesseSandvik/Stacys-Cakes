@@ -6,7 +6,7 @@ import Main from "../../components/organisms/main/Main";
 function Gallery(): React.ReactElement {
   return (
     <Main className="Gallery">
-      <Heading level={5}>Gallery</Heading>
+      <Heading level={1}>Gallery</Heading>
     </Main>
   );
 }
