@@ -17,4 +17,11 @@ describe("<Button />", () => {
 
     expect(button).toHaveAttribute("type", "button");
   });
+  test("<Button /> component assigned class passed as prop", () => {
+    render(<Button className="test-btn">this should render</Button>);
+
+    const button = screen.getByRole("button", { name: /this should render/i });
+
+    expect(button).toHaveClass("test-btn");
+  });
 });
