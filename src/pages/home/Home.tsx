@@ -3,6 +3,7 @@ import React from "react";
 import Button from "../../components/atoms/button/Button";
 import Heading from "../../components/atoms/heading/Heading";
 import Main from "../../components/organisms/main/Main";
+import NavigationLink from "../../components/atoms/navigationLink/NavigationLink";
 
 import "./Home.css";
 
@@ -22,6 +23,18 @@ function Home(): React.ReactElement {
             <em>fresh</em> from her kitchen, & delivered straight to your
             doorstep!
           </p>
+          <br />
+          <div className="policy-info">
+            <p>Ready to order?</p>
+            <p>
+              {" "}
+              Review our{" "}
+              <NavigationLink path="/contact">
+                booking policy & contact information
+              </NavigationLink>
+              .
+            </p>
+          </div>
         </div>
         <div className="btn-group">
           <Button onClick={() => console.log("click")}>view our menu</Button>

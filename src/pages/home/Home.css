@@ -13,7 +13,7 @@
   display: grid;
   grid-column: 2 / span 4;
   grid-row: 2 / span 8;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
   padding: 16px;
 }
 
@@ -33,8 +33,20 @@
   flex-direction: column;
   font-size: 1.25rem;
   font-weight: bold;
-  padding: 16px 60px;
+  justify-content: space-between;
+  padding: 8px 60px;
   text-align: center;
+}
+
+.Home-body-greeting .body .policy-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  gap: 4px;
+}
+
+.Home-body-greeting .body .policy-info a {
+  color: blue;
 }
 
 .Home-body-greeting .body p .text-accent {
@@ -53,7 +65,7 @@
   border: 4px solid var(--primary);
   border-radius: 8px;
   box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.3);
-  color: var(--primary);
+  color: var(--secondary);
   font-size: 1.2rem;
   font-weight: bold;
   height: 60px;

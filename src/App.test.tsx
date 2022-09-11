@@ -6,9 +6,9 @@ describe("<App />", () => {
   test("Routes the user to home, '/' when the user clicks the app logo in the header", async () => {
     render(<App />);
 
-    const contactLink = screen.getByRole("link", { name: /contact/i });
+    const contactLink = screen.getAllByRole("link", { name: /contact/i });
 
-    userEvent.click(contactLink);
+    userEvent.click(contactLink[0]);
 
     const contactPageHeading = await screen.findByRole("heading", {
       name: /contact/i,
