@@ -1,11 +1,10 @@
-import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { BrowserRouter } from "react-router-dom";
+import { render, screen } from "./test-config/test-library-config";
 import App from "./App";
 
 describe("<App />", () => {
   test("Routes the user to home, '/' when the user clicks the app logo in the header", async () => {
-    render(<App />, { wrapper: BrowserRouter });
+    render(<App />);
 
     const contactLink = screen.getByRole("link", { name: /contact/i });
 
@@ -24,7 +23,7 @@ describe("<App />", () => {
     expect(homePageBody).toHaveTextContent("home");
   });
   test("Routes the user to contact, '/contact' when the user clicks the 'Contact' navigation element in the header", async () => {
-    render(<App />, { wrapper: BrowserRouter });
+    render(<App />);
 
     const contactLink = screen.getByRole("link", { name: /contact/i });
 
