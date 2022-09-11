@@ -1,0 +1,13 @@
+header {
+  background-color: var(--primary);
+  color: var(--secondary);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: sticky;
+  text-transform: capitalize;
+}
+
+header ul {
+  border: 1px solid red;
+}

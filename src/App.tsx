@@ -8,6 +8,8 @@ import Gallery from "./pages/gallery/Gallery";
 import Home from "./pages/home/Home";
 import Menu from "./pages/menu/Menu";
 
+import "./App.css";
+
 function App() {
   return (
     <div className="App">
