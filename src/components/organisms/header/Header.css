@@ -1,6 +1,7 @@
 header {
   position: sticky;
   text-transform: capitalize;
+  z-index: 10;
 }
 
 header nav {

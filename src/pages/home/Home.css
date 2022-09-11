@@ -1,0 +1,16 @@
+.Home {
+  border: 1px solid orange;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  padding: 16px;
+}
+
+.Home-body-greeting {
+  background-color: var(--secondary);
+  border-radius: 4px;
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+  grid-column: 2 / span 4;
+  grid-row: 2 / span 8;
+  padding: 16px;
+}
