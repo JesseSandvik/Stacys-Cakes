@@ -1,5 +1,4 @@
 .Home {
-  border: 1px solid orange;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
@@ -7,10 +6,65 @@
 }
 
 .Home-body-greeting {
-  background-color: var(--secondary);
-  border-radius: 4px;
+  background-color: #fff;
+  border: 4px solid var(--accent-medium);
+  border-radius: 16px;
   box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+  display: grid;
   grid-column: 2 / span 4;
   grid-row: 2 / span 8;
+  grid-template-rows: 1fr 1fr 1fr;
   padding: 16px;
+}
+
+.Home-body-greeting .heading {
+  text-align: center;
+}
+
+.Home-body-greeting .heading h1 {
+  font-family: Corinthia, Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
+  padding: 24px;
+}
+
+.Home-body-greeting .body {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 16px 60px;
+  text-align: center;
+}
+
+.Home-body-greeting .body p .text-accent {
+  color: var(--accent-bright);
+  font-size: 1.5rem;
+}
+
+.Home-body-greeting .btn-group {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Home-body-greeting .btn-group button {
+  background-color: var(--accent-bright);
+  border: 4px solid var(--primary);
+  border-radius: 8px;
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.3);
+  color: var(--primary);
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 60px;
+  letter-spacing: 0.033rem;
+  opacity: 0.9;
+  text-transform: capitalize;
+  transition: 0.4s ease-in-out;
+  width: 260px;
+}
+
+.Home-body-greeting .btn-group button:hover {
+  opacity: 1;
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
 }
