@@ -45,13 +45,21 @@ header nav .Header-center-logo a {
   flex-direction: column;
   padding: 16px;
   text-align: center;
+  width: 340px;
 }
 
 header nav .Header-center-logo a .title {
   border-bottom: 4px solid var(--accent-bright);
-  font-size: 2.5rem;
+  font-family: Corinthia, Arial, Helvetica, sans-serif;
+  font-size: 4rem;
   margin-bottom: 4px;
-  padding-bottom: 8px;
+  padding-bottom: 4px;
+}
+
+header nav .Header-center-logo a .location {
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
 }
 
 header nav .Header-right-list {
