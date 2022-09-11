@@ -3,12 +3,13 @@ import React from "react";
 type Props = {
   children: React.ReactNode;
   className?: string;
+  id?: string;
   type?: string;
 };
 
-function Button({ children, className, type }: Props): React.ReactElement {
+function Button({ children, className, id, type }: Props): React.ReactElement {
   return (
-    <button className={className} type={type ? "button" : "submit"}>
+    <button className={className} id={id} type={type ? "button" : "submit"}>
       {children}
     </button>
   );
@@ -16,6 +17,7 @@ function Button({ children, className, type }: Props): React.ReactElement {
 
 Button.defaultProps = {
   className: undefined,
+  id: undefined,
   type: undefined,
 };
 
