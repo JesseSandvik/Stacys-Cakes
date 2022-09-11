@@ -7,7 +7,7 @@ function Header(): React.ReactElement {
   return (
     <header>
       <nav>
-        <ul>
+        <ul className="Header-left-list">
           <li>
             <NavLink to="/about">about</NavLink>
           </li>
@@ -15,8 +15,13 @@ function Header(): React.ReactElement {
             <NavLink to="/gallery">gallery</NavLink>
           </li>
         </ul>
-        <NavLink to="/">Stacy&apos;s Cakes New York</NavLink>
-        <ul>
+        <div className="Header-center-logo">
+          <NavLink to="/">
+            <span className="title">Stacy&apos;s Cakes</span>{" "}
+            <span className="location">New York</span>
+          </NavLink>
+        </div>
+        <ul className="Header-right-list">
           <li>
             <NavLink to="/menu">menu</NavLink>
           </li>
