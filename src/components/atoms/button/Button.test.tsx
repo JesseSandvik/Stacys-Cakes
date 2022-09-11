@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import Button from "./Button";
 
 describe("<Button />", () => {
-  test("Renders the <Button /> component with an initial type of 'button'", () => {
+  test("Renders the <Button /> component with an initial type of 'button' to be enabled", () => {
     render(
       <Button onClick={() => console.log("click")}>this should render</Button>
     );
@@ -11,6 +11,7 @@ describe("<Button />", () => {
 
     expect(button).toBeInTheDocument();
     expect(button).toHaveAttribute("type", "button");
+    expect(button).toBeEnabled();
   });
   test("<Button /> component has type of 'submit' with type passed as a prop", () => {
     render(
@@ -34,7 +35,7 @@ describe("<Button />", () => {
 
     expect(button).toHaveAttribute("type", "button");
   });
-  test("<Button /> component assigned class passed as prop", () => {
+  test("<Button /> component assigned class(className) passed as prop", () => {
     render(
       <Button onClick={() => console.log("click")} className="test-btn">
         this should render
