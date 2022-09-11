@@ -23,24 +23,23 @@ function Home(): React.ReactElement {
             <em>fresh</em> from her kitchen, & delivered straight to your
             doorstep!
           </p>
-          <br />
-          <div className="policy-info">
-            <p>Ready to order?</p>
-            <p>
-              {" "}
-              Review our{" "}
-              <NavigationLink path="/contact">
-                booking policy & contact information
-              </NavigationLink>
-              .
-            </p>
-          </div>
         </div>
         <div className="btn-group">
           <Button onClick={() => console.log("click")}>view our menu</Button>
           <Button onClick={() => console.log("click")}>
             view custom options
           </Button>
+        </div>
+        <div className="policy-info">
+          <p>Ready to order?</p>
+          <p>
+            {" "}
+            Review our{" "}
+            <NavigationLink path="/contact">
+              booking policy & contact information
+            </NavigationLink>
+            .
+          </p>
         </div>
       </section>
       <section className="Home-body-notice">

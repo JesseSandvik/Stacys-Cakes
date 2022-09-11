@@ -1,6 +1,11 @@
 header {
+  display: grid;
+  left: 0;
   position: sticky;
+  right: 0;
   text-transform: capitalize;
+  top: 0;
+  z-index: 10;
 }
 
 header nav {
@@ -51,13 +56,13 @@ header nav .Header-center-logo a {
   flex-direction: column;
   padding: 16px;
   text-align: center;
-  width: 400px;
+  width: 340px;
 }
 
 header nav .Header-center-logo a .title {
   border-bottom: 4px solid var(--accent-bright);
   font-family: Corinthia, Arial, Helvetica, sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 4px;
   padding-bottom: 4px;
 }
