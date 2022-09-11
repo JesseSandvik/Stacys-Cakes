@@ -5,6 +5,7 @@ type Props = {
   className?: string;
   disabled?: boolean;
   id?: string;
+  onClick(): void;
   type?: string;
 };
 
@@ -13,6 +14,7 @@ function Button({
   className,
   disabled,
   id,
+  onClick,
   type,
 }: Props): React.ReactElement {
   return (
@@ -20,6 +22,7 @@ function Button({
       className={className}
       disabled={disabled}
       id={id}
+      onClick={onClick}
       type={type === "submit" ? "submit" : "button"}
     >
       {children}
