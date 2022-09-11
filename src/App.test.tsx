@@ -10,17 +10,21 @@ describe("<App />", () => {
 
     userEvent.click(contactLink);
 
-    const contactPageBody = await screen.findByRole("main");
+    const contactPageHeading = await screen.findByRole("heading", {
+      name: /contact/i,
+    });
 
-    expect(contactPageBody).toHaveTextContent("contact");
+    expect(contactPageHeading).toBeInTheDocument();
 
     const appLogo = screen.getByText("Stacy's Cakes New York");
 
     userEvent.click(appLogo);
 
-    const homePageBody = await screen.findByRole("main");
+    const homePageHeading = await screen.findByRole("heading", {
+      name: /home/i,
+    });
 
-    expect(homePageBody).toHaveTextContent("home");
+    expect(homePageHeading).toBeInTheDocument();
   });
   test("Routes the user to contact, '/contact' when the user clicks the 'Contact' navigation element in the header", async () => {
     render(<App />);
@@ -29,8 +33,10 @@ describe("<App />", () => {
 
     userEvent.click(contactLink);
 
-    const pageBody = await screen.findByRole("main");
+    const contactPageHeading = await screen.findByRole("heading", {
+      name: /contact/i,
+    });
 
-    expect(pageBody).toHaveTextContent("contact");
+    expect(contactPageHeading).toBeInTheDocument();
   });
 });
