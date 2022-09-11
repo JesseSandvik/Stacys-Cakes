@@ -99,6 +99,7 @@
   grid-column: 2 / span 5;
   grid-row: 9 / -1;
   justify-content: center;
+  padding: 16px;
 }
 
 .Home-body-greeting,
@@ -117,4 +118,34 @@
     url("../../images/black-grey-polka-dots.jpg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.Home-body-notice-social-icons {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  padding: 16px;
+}
+
+.Home-body-notice-social-icons a {
+  align-items: center;
+  background-color: var(--primary);
+  border-radius: 4px;
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  height: 36px;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+  width: 36px;
+}
+
+.Home-body-notice-social-icons a:hover {
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+  scale: 1.1;
+}
+
+.Home-body-notice-social-icons a i {
+  color: var(--accent-bright);
+  font-size: 32px;
 }

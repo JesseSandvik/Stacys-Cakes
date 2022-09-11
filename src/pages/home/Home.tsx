@@ -45,6 +45,32 @@ function Home(): React.ReactElement {
       <section className="Home-body-notice">
         <p>
           <strong>Now serving Nassau and Suffolk county!</strong>
+          <div className="Home-body-notice-social-icons">
+            <a
+              href="mailto: stacyscakesny@gmai.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="email"
+            >
+              <i className="fa-solid fa-square-envelope" />
+            </a>
+            <a
+              href="https://www.facebook.com/stacyscakesandcupcakes"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Facebook"
+            >
+              <i className="fa-brands fa-square-facebook" />
+            </a>
+            <a
+              href="https://www.instagram.com/stacyscakesny"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Instagram"
+            >
+              <i className="fa-brands fa-instagram-square" />
+            </a>
+          </div>
         </p>
       </section>
     </Main>
