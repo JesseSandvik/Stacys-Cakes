@@ -26,6 +26,45 @@ describe("<App />", () => {
 
     expect(homePageHeading).toBeInTheDocument();
   });
+  test("Routes the user to about, '/about' when the user clicks the 'About' navigation element in the header", async () => {
+    render(<App />);
+
+    const aboutLink = screen.getByRole("link", { name: /about/i });
+
+    userEvent.click(aboutLink);
+
+    const aboutPageHeading = await screen.findByRole("heading", {
+      name: /about/i,
+    });
+
+    expect(aboutPageHeading).toBeInTheDocument();
+  });
+  test("Routes the user to gallery, '/gallery' when the user clicks the 'Gallery' navigation element in the header", async () => {
+    render(<App />);
+
+    const galleryLink = screen.getByRole("link", { name: /gallery/i });
+
+    userEvent.click(galleryLink);
+
+    const galleryPageHeading = await screen.findByRole("heading", {
+      name: /gallery/i,
+    });
+
+    expect(galleryPageHeading).toBeInTheDocument();
+  });
+  test("Routes the user to menu, '/menu' when the user clicks the 'Menu' navigation element in the header", async () => {
+    render(<App />);
+
+    const menuLink = screen.getByRole("link", { name: /menu/i });
+
+    userEvent.click(menuLink);
+
+    const menuPageHeading = await screen.findByRole("heading", {
+      name: /menu/i,
+    });
+
+    expect(menuPageHeading).toBeInTheDocument();
+  });
   test("Routes the user to contact, '/contact' when the user clicks the 'Contact' navigation element in the header", async () => {
     render(<App />);
 
