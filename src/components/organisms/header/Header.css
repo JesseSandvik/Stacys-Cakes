@@ -1,7 +1,6 @@
 header {
   position: sticky;
   text-transform: capitalize;
-  z-index: 10;
 }
 
 header nav {
@@ -52,7 +51,7 @@ header nav .Header-center-logo a {
   flex-direction: column;
   padding: 16px;
   text-align: center;
-  width: 340px;
+  width: 400px;
 }
 
 header nav .Header-center-logo a .title {

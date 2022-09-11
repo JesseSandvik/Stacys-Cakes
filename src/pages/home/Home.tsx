@@ -43,6 +43,11 @@ function Home(): React.ReactElement {
           </Button>
         </div>
       </section>
+      <section className="Home-body-notice">
+        <p>
+          <strong>Now serving Nassau and Suffolk county!</strong>
+        </p>
+      </section>
     </Main>
   );
 }
