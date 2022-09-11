@@ -16,7 +16,7 @@ describe("<App />", () => {
 
     expect(contactPageHeading).toBeInTheDocument();
 
-    const appLogo = screen.getByText("Stacy's Cakes New York");
+    const appLogo = screen.getByText("Stacy's Cakes");
 
     userEvent.click(appLogo);
 
