@@ -1,0 +1,24 @@
+.About {
+  color: var(--secondary);
+}
+
+.About > * {
+  border: 1px solid orange;
+}
+
+.About-heading {
+  grid-column: 1 / -1;
+  grid-row: 1 / 1;
+}
+
+.About-heading h1 {
+  color: var(--accent-bright);
+  font-family: Corinthia, Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
+}
+
+.About-body {
+  grid-column: 1 / -1;
+  grid-row: 2 / -1;
+}
