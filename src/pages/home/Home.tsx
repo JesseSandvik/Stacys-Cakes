@@ -27,10 +27,8 @@ function Home(): React.ReactElement {
           </p>
         </div>
         <div className="btn-group">
-          <Button onClick={() => console.log("click")}>view our menu</Button>
-          <Button onClick={() => console.log("click")}>
-            view custom options
-          </Button>
+          <Button className="default-page-btn">view our menu</Button>
+          <Button className="default-page-btn">view custom options</Button>
         </div>
         <div className="policy-info">
           <p>Ready to order?</p>

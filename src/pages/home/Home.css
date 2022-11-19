@@ -56,27 +56,6 @@
   justify-content: center;
 }
 
-.Home-body-greeting .btn-group button {
-  background-color: var(--accent-bright);
-  border: 4px solid var(--primary);
-  border-radius: 8px;
-  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.3);
-  color: var(--secondary);
-  font-size: 1.2rem;
-  font-weight: bold;
-  height: 60px;
-  letter-spacing: 0.033rem;
-  opacity: 0.9;
-  text-transform: capitalize;
-  transition: 0.4s ease-in-out;
-  width: 300px;
-}
-
-.Home-body-greeting .btn-group button:hover {
-  opacity: 1;
-  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
-}
-
 .Home-body-notice {
   align-items: center;
   border: 4px solid var(--accent-bright);
