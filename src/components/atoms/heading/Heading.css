@@ -7,10 +7,18 @@ h6 {
   text-transform: capitalize;
 }
 
-h1 {
-  border-bottom: 4px solid var(--accent-bright);
+.Contact h1,
+.Contact h2 {
   color: var(--secondary);
+}
+
+.Contact h1 {
+  border-bottom: 4px solid var(--accent-bright);
   grid-column: 1 / -1;
   grid-row: 1 / 1;
   padding: 0 0 16px 16px;
+}
+
+.Contact h2 {
+  border-bottom: 2px solid var(--accent-medium);
 }

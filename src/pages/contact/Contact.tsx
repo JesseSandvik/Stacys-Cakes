@@ -1,5 +1,6 @@
 import React from "react";
 
+import ExtLink from "../../components/atoms/extlink/ExtLink";
 import Heading from "../../components/atoms/heading/Heading";
 import Main from "../../components/organisms/main/Main";
 
@@ -8,7 +9,7 @@ import "./Contact.css";
 function Contact(): React.ReactElement {
   return (
     <Main className="Contact">
-      <Heading level={1}>Contact Us</Heading>
+      <Heading level={1}>booking policy & contact information</Heading>
       <section className="Contact-left-panel">
         <article id="booking-policy">
           <Heading level={2}>booking policy</Heading>
@@ -85,7 +86,40 @@ function Contact(): React.ReactElement {
         <article id="delivery" />
       </section>
       <section className="Contact-right-panel">
-        <article id="contact-info" />
+        <article id="contact-info">
+          <Heading level={2}>contact</Heading>
+          <p id="contact-message">We would love to hear from you!</p>
+          <ul>
+            <li>
+              <Heading level={3}>contact us by phone:</Heading>
+              <ExtLink href="tel:5168194035">
+                <i className="fa-solid fa-square-phone" />
+                <Heading level={4}>516 - 819 - 4035</Heading>
+              </ExtLink>
+            </li>
+            <li>
+              <Heading level={3}>contact us by email:</Heading>
+              <ExtLink href="mailto: stacyscakesny@gmai.com">
+                <i className="fa-solid fa-square-envelope" />
+                <Heading level={4}>stacyscakesny@gmail.com</Heading>
+              </ExtLink>
+            </li>
+            <li>
+              <Heading level={3}>like us on facebook:</Heading>
+              <ExtLink href="https://www.facebook.com/stacyscakesandcupcakes">
+                <i className="fa-brands fa-facebook-square" />
+                <Heading level={4}>Stacy&apos;s Cakes NY</Heading>
+              </ExtLink>
+            </li>
+            <li>
+              <Heading level={3}>follow us on instagram:</Heading>
+              <ExtLink href="https://www.instagram.com/stacyscakesny">
+                <i className="fa-brands fa-instagram-square" />
+                <Heading level={4}>STACYSCAKESNY</Heading>
+              </ExtLink>
+            </li>
+          </ul>
+        </article>
       </section>
     </Main>
   );

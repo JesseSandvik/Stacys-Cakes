@@ -1,5 +1,5 @@
 .Contact {
-  background-color: #1f1f1f99;
+  background-color: #00000099;
   box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.33);
   display: grid;
   gap: 16px;
@@ -11,16 +11,70 @@
 }
 
 .Contact section {
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   color: var(--secondary);
+  display: grid;
+  gap: 16px;
   grid-row: 2 / -1;
   padding: 16px;
+}
+
+.Contact section article ul,
+.Contact section article ol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 16px;
 }
 
 .Contact-left-panel {
   grid-column: 1 / 7;
 }
 
+.Contact article {
+  background-color: #1f1f1f;
+  border: 1px solid var(--accent-bright);
+  border-radius: 4px;
+}
+
+.Contact article > * {
+  padding: 16px;
+}
+
 .Contact-right-panel {
   grid-column: 7 / -1;
+}
+
+.Contact-right-panel #contact-message {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
+  justify-content: center;
+  letter-spacing: 0.033rem;
+  margin: 16px;
+}
+
+.Contact-right-panel article ul {
+  list-style: none;
+}
+
+.Contact-right-panel article ul li {
+  align-items: center;
+  background-color: #1f1f1f;
+  border: 1px solid var(--accent-bright);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+}
+
+.Contact-right-panel article ul li a {
+  align-items: center;
+  color: var(--accent-bright);
+  display: flex;
+  font-size: 1.5rem;
+  gap: 8px;
+  justify-content: center;
+  padding: 8px;
 }
