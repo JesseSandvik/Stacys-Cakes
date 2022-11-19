@@ -48,7 +48,21 @@ header nav .Header-center-logo {
 
 header nav .Header-center-logo a {
   align-items: center;
-  background-color: #fff;
+  background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../../../images/black-grey-polka-dots.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 4px solid var(--primary);
   border-radius: 16px;
   color: var(--primary);

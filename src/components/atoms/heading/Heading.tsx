@@ -1,4 +1,5 @@
 import React from "react";
+import "./Heading.css";
 
 type Props = {
   children: React.ReactNode;

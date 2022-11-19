@@ -1,6 +1,7 @@
 import React from "react";
 
 import Button from "../../components/atoms/button/Button";
+import ExtLink from "../../components/atoms/extlink/ExtLink";
 import Heading from "../../components/atoms/heading/Heading";
 import Image from "../../components/atoms/image/Image";
 import Main from "../../components/organisms/main/Main";
@@ -22,7 +23,7 @@ function Home(): React.ReactElement {
             <span className="text-accent">cakes</span>,{" "}
             <span className="text-accent">cupcakes</span>, &{" "}
             <span className="text-accent">treats</span> are prepared{" "}
-            <em>fresh</em> from her kitchen, & delivered straight to your
+            <em>fresh</em> from her kitchen & delivered straight to your
             doorstep!
           </p>
         </div>
@@ -47,30 +48,33 @@ function Home(): React.ReactElement {
           <strong>Now serving Nassau and Suffolk county!</strong>
         </p>
         <div className="Home-body-notice-social-icons">
-          <a
+          <ExtLink
+            className="social-icon-link"
             href="mailto: stacyscakesny@gmai.com"
             rel="noopener noreferrer"
             target="_blank"
             title="email"
           >
             <i className="fa-solid fa-square-envelope" />
-          </a>
-          <a
+          </ExtLink>
+          <ExtLink
+            className="social-icon-link"
             href="https://www.facebook.com/stacyscakesandcupcakes"
             rel="noopener noreferrer"
             target="_blank"
             title="Facebook"
           >
             <i className="fa-brands fa-square-facebook" />
-          </a>
-          <a
+          </ExtLink>
+          <ExtLink
+            className="social-icon-link"
             href="https://www.instagram.com/stacyscakesny"
             rel="noopener noreferrer"
             target="_blank"
             title="Instagram"
           >
             <i className="fa-brands fa-instagram-square" />
-          </a>
+          </ExtLink>
         </div>
       </section>
       <section className="Home-body-image-container">

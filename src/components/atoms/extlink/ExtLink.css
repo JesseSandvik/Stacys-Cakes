@@ -1,0 +1,23 @@
+.social-icon-link {
+  align-items: center;
+  background-color: var(--primary);
+  border-radius: 4px;
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  height: 36px;
+  justify-content: center;
+  opacity: 0.9;
+  transition: 0.2s ease-in-out;
+  width: 36px;
+}
+
+.social-icon-link i {
+  color: var(--accent-bright);
+  font-size: 32px;
+}
+
+.social-icon-link:hover {
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+  opacity: 1;
+  scale: 1.1;
+}
