@@ -5,7 +5,7 @@ type Props = {
   className?: string;
   disabled?: boolean;
   id?: string;
-  onClick(): void;
+  onClick?(): void;
   type?: string;
 };
 
@@ -34,6 +34,7 @@ Button.defaultProps = {
   className: undefined,
   disabled: false,
   id: undefined,
+  onClick: undefined,
   type: "button",
 };
 
