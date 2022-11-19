@@ -82,8 +82,46 @@ function Contact(): React.ReactElement {
             </li>
           </ul>
         </article>
-        <article id="cancellations" />
-        <article id="delivery" />
+        <article id="cancellations">
+          <Heading level={2}>cancellations</Heading>
+          <ul>
+            <li>
+              <p>
+                Cancelling orders within 10 days of the agreed delivery date
+                will result in the loss of the original deposit.
+              </p>
+            </li>
+            <li>
+              <p>
+                Cancelling orders prior to 10 days of the agreed delivery date
+                will result in the deposit amount being credited toward a future
+                order. An additional deposit will however still be required to
+                confirm a new order date.
+              </p>
+            </li>
+          </ul>
+        </article>
+        <article id="delivery">
+          <Heading level={2}>deliveries</Heading>
+          <p id="delivery-note">
+            Please refer to the delivery map below. Deliveries are unavailable
+            outside of these specified areas:
+          </p>
+          <ul>
+            <li>
+              <p>
+                Deliveries within a 20 mile radius (of blue dot) will be charged
+                a $10 fee.
+              </p>
+            </li>
+            <li>
+              <p>
+                Deliveries outside of a 20 mile radius (of blue dot) will be
+                charged a $25 fee.
+              </p>
+            </li>
+          </ul>
+        </article>
       </section>
       <section className="Contact-right-panel">
         <article id="contact-info">

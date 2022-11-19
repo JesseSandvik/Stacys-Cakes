@@ -21,3 +21,13 @@
   opacity: 1;
   scale: 1.1;
 }
+
+.Contact-right-panel article ul li a {
+  align-items: center;
+  color: var(--accent-bright);
+  display: flex;
+  font-size: 1.5rem;
+  gap: 8px;
+  justify-content: center;
+  padding: 8px;
+}
