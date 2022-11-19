@@ -6,11 +6,29 @@ type Props = {
   className?: string;
   href: string;
   id?: string;
+  rel?: string;
+  target?: string;
+  title?: string;
 };
 
-function ExtLink({ children, className, href, id }: Props): React.ReactElement {
+function ExtLink({
+  children,
+  className,
+  href,
+  id,
+  rel,
+  target,
+  title,
+}: Props): React.ReactElement {
   return (
-    <a className={className} href={href} id={id}>
+    <a
+      className={className}
+      href={href}
+      id={id}
+      rel={rel}
+      target={target}
+      title={title}
+    >
       {children}
     </a>
   );
@@ -19,6 +37,9 @@ function ExtLink({ children, className, href, id }: Props): React.ReactElement {
 ExtLink.defaultProps = {
   className: undefined,
   id: undefined,
+  rel: undefined,
+  target: undefined,
+  title: undefined,
 };
 
 export default ExtLink;

@@ -45,4 +45,45 @@ describe("<ExtLink />", () => {
     expect(extLink).toHaveAttribute("id", "test-id");
     expect(extLink).not.toHaveAttribute("id", "bad-test-id");
   });
+  test("<ExtLink /> component assigned rel passed as prop", () => {
+    render(
+      <ExtLink href={testHref} rel="test-rel">
+        test ext link
+      </ExtLink>
+    );
+
+    const extLink = screen.getByRole("link", { name: /test ext link/i });
+
+    expect(extLink).toBeInTheDocument();
+    expect(extLink).toHaveAttribute("rel", "test-rel");
+    expect(extLink).not.toHaveAttribute("rel", "bad-test-rel");
+  });
+  test("<ExtLink /> component assigned target passed as prop", () => {
+    render(
+      <ExtLink href={testHref} target="test-target">
+        test ext link
+      </ExtLink>
+    );
+
+    const extLink = screen.getByRole("link", { name: /test ext link/i });
+
+    expect(extLink).toBeInTheDocument();
+    expect(extLink).toHaveAttribute("target", "test-target");
+    expect(extLink).not.toHaveAttribute("target", "bad-test-target");
+  });
+  test("<ExtLink /> component assigned title passed as prop", () => {
+    render(
+      <ExtLink href={testHref} title="test-title">
+        test ext link
+      </ExtLink>
+    );
+
+    const extLink = screen.getByRole("link", { name: /test-title/i });
+
+    expect(extLink).toBeInTheDocument();
+    expect(extLink).toHaveAttribute("title", "test-title");
+    expect(extLink).toHaveTextContent("test ext link");
+    expect(extLink).not.toHaveTextContent("bad text content");
+    expect(extLink).not.toHaveAttribute("title", "bad-test-title");
+  });
 });
