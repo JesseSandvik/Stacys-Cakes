@@ -11,7 +11,7 @@ function Contact(): React.ReactElement {
       <Heading level={1}>Contact Us</Heading>
       <section className="Contact-left-panel">
         <article id="booking-policy">
-          <Heading level={3}>booking policy</Heading>
+          <Heading level={2}>booking policy</Heading>
           <ul>
             <li>
               <p>
@@ -38,8 +38,49 @@ function Contact(): React.ReactElement {
             </li>
           </ul>
         </article>
-        <article id="contracts" />
-        <article id="deposits" />
+        <article id="contracts">
+          <Heading level={2}>contracts</Heading>
+          <ul>
+            <li>
+              <p>
+                Contracts & deposits must be receieved a minimum of two weeks
+                prior to the event date.
+              </p>
+            </li>
+            <li>
+              <p>
+                Contracts must be properly filled out upon submission. Failing
+                to do so may result in possible delays, as well as the
+                cancellation of an order.
+              </p>
+            </li>
+          </ul>
+        </article>
+        <article id="deposits">
+          <Heading level={2}>deposits</Heading>
+          <ul>
+            <li>
+              <p>
+                Contracts & deposits must be receieved a minimum of two weeks
+                prior to the event date.
+              </p>
+            </li>
+            <li>
+              <p>We accept the following methods of payment for deposits:</p>
+              <ul>
+                <li>
+                  <p>Credit Card</p>
+                </li>
+                <li>
+                  <p>PayPal</p>
+                </li>
+                <li>
+                  <p>Venmo</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </article>
         <article id="cancellations" />
         <article id="delivery" />
       </section>
