@@ -2,8 +2,10 @@ import React from "react";
 
 import ExtLink from "../../components/atoms/extlink/ExtLink";
 import Heading from "../../components/atoms/heading/Heading";
+import Image from "../../components/atoms/image/Image";
 import Main from "../../components/organisms/main/Main";
 
+import DeliveryMapImage from "../../images/delivery-map.jpg";
 import "./Contact.css";
 
 function Contact(): React.ReactElement {
@@ -121,6 +123,9 @@ function Contact(): React.ReactElement {
               </p>
             </li>
           </ul>
+          <div className="delivery-map">
+            <Image alt="Delivery Map" src={DeliveryMapImage} />
+          </div>
         </article>
       </section>
       <section className="Contact-right-panel">

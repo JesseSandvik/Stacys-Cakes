@@ -13,10 +13,12 @@ h6 {
 }
 
 .Contact h1 {
+  align-items: center;
   border-bottom: 4px solid var(--accent-bright);
+  display: flex;
   grid-column: 1 / -1;
   grid-row: 1 / 1;
-  padding: 0 0 16px 16px;
+  padding: 0 0 0 16px;
 }
 
 .Contact h2 {

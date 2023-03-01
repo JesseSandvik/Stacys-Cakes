@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./Image.css";
+
 type Props = {
   alt: string;
   className?: string;
