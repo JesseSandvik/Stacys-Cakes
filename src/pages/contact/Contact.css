@@ -1,25 +1,15 @@
-.Contact {
-  background-color: #00000099;
-  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.33);
+.Contact-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Contact-body section {
   display: grid;
   gap: 16px;
-  grid-row: 2 / 2;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  margin: 16px 0;
   padding: 16px;
 }
 
-.Contact section {
-  color: var(--secondary);
-  display: grid;
-  gap: 16px;
-  grid-row: 2 / -1;
-  padding: 16px;
-}
-
-.Contact section article {
-  background-color: #1f1f1f;
+.Contact-body section article {
   border: 1px solid var(--accent-bright);
   border-radius: 4px;
 }
@@ -36,12 +26,8 @@
   margin: 16px;
 }
 
-.Contact-left-panel {
-  grid-column: 1 / 7;
-}
-
-.Contact-right-panel {
-  grid-column: 7 / -1;
+.Contact-left-panel article, .Contact-right-panel article {
+  background-color: #1f1f1f;
 }
 
 .Contact-right-panel #contact-message {

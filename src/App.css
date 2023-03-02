@@ -3,3 +3,19 @@
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
+
+.About, .Contact {
+  background-color: #00000099;
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.33);
+  display: grid;
+  margin: 32px 0;
+  padding: 16px;
+}
+
+.About-heading, .Contact-heading {
+  padding: 16px;
+}
+
+.About section, .Contact section {
+  color: var(--secondary);
+}

@@ -1,21 +1,13 @@
 .About {
-  color: var(--secondary);
-}
-
-.About > * {
-  border: 1px solid orange;
-}
-
-.About-heading {
-  grid-column: 1 / -1;
-  grid-row: 1 / 1;
-}
-
-.About-heading h1 {
-  color: var(--accent-bright);
-  font-family: Corinthia, Arial, Helvetica, sans-serif;
-  font-size: 4rem;
-  letter-spacing: 0.1rem;
+  background-color: #00000099;
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.33);
+  display: grid;
+  gap: 16px;
+  grid-row: 2 / 2;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  margin: 16px 0;
+  padding: 16px;
 }
 
 .About-body {

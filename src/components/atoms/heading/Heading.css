@@ -7,20 +7,17 @@ h6 {
   text-transform: capitalize;
 }
 
+.About h1,
+.About h2,
 .Contact h1,
 .Contact h2 {
   color: var(--secondary);
 }
 
-.Contact h1 {
-  align-items: center;
+.About h1, .Contact h1 {
   border-bottom: 4px solid var(--accent-bright);
-  display: flex;
-  grid-column: 1 / -1;
-  grid-row: 1 / 1;
-  padding: 0 0 0 16px;
 }
 
-.Contact h2 {
+.About h2, .Contact h2 {
   border-bottom: 2px solid var(--accent-medium);
 }
