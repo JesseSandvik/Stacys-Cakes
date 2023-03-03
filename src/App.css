@@ -4,18 +4,28 @@
   min-height: 100vh;
 }
 
-.About, .Contact {
+.About,
+.Contact {
   background-color: #00000099;
   box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.33);
   display: grid;
+  grid-template-rows: auto 1fr;
   margin: 32px 0;
   padding: 16px;
 }
 
-.About-heading, .Contact-heading {
+.About-heading,
+.Contact-heading {
   padding: 16px;
 }
 
-.About section, .Contact section {
+.About section,
+.Contact section {
   color: var(--secondary);
+}
+
+.About section,
+.Contact-left-panel article,
+.Contact-right-panel article {
+  background-color: #1f1f1f;
 }

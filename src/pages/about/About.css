@@ -1,16 +1,16 @@
-.About {
-  background-color: #00000099;
-  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.33);
+.About-body {
   display: grid;
-  gap: 16px;
-  grid-row: 2 / 2;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  margin: 16px 0;
+  grid-template-columns: 1fr 1fr;
+}
+
+.About-body section {
+  border: 1px solid var(--accent-bright);
+  border-radius: 4px;
+  display: grid;
+  margin: 16px;
   padding: 16px;
 }
 
-.About-body {
-  grid-column: 1 / -1;
-  grid-row: 2 / -1;
+.About-body section p {
+  line-height: 28px;
 }

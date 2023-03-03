@@ -13,40 +13,48 @@ function About(): React.ReactElement {
       </div>
       <div className="About-body">
         <section>
-          <article id="intro">
-            <p>
-              Welcome to Stacy&apos;s Cakes, where we specialize in creating
-              delicious and visually stunning baked goods for any occasion!
-              Stacy&apos;s Cakes is owned and operated by Stacy herself, who
-              takes great pride in using only the highest quality ingredients.
-              Stacy bakes everything from scratch to ensure that her customers
-              receive only the freshest and most delicious baked goods.
-            </p>
-            <p>
-              At Stacy&apos;s Cakes, we offer a wide variety of goodies,
-              including cakes, cupcakes, cookies, and pies. Our cakes come in a
-              range of sizes, from small individual servings to large
-              celebration cakes that can serve up to 20 people or more! We can
-              customize your cake to suit any occasion, whether it&apos;s a
-              wedding, birthday, or any other special event.
-            </p>
-            <p>
-              Our cupcakes are the perfect addition to any party or gathering.
-              We have a variety of flavors to choose from, including classic
-              vanilla and chocolate, as well as offering more unique flavors
-              like red velvet and Stacy&apos;s famous carrot cake. We also offer
-              a selection of vegan and gluten-free options to ensure that
-              everyone can enjoy our baked goods.
-            </p>
-            <p>
-              Stacy takes great pride in baking her masterpieces, and aims to
-              impress each and every time. She takes great care in preparing
-              each item, ensuring that every bite is an absolute delight. We
-              invite you to come and experience the magic of Stacy&apos;s Cakes,
-              so place your order today and indulge in the sweetest treats in
-              town!
-            </p>
-          </article>
+          <p>
+            Welcome to <em>Stacy&apos;s Cakes</em>, where we specialize in
+            creating{" "}
+            <strong>delicious and visually stunning baked goods</strong> for any
+            occasion! <em>Stacy&apos;s Cakes</em> is owned and operated by Stacy
+            herself, who takes <em>great pride</em> in using only the
+            <strong> highest quality ingredients</strong>. Stacy bakes
+            <strong> everything from scratch</strong> to ensure that her
+            customers receive only the <em>freshest</em> and{" "}
+            <em>most delicious</em> baked goods.
+          </p>
+          <p>
+            At <em>Stacy&apos;s Cakes</em>, we offer a wide variety of goodies,
+            including <strong>cakes, cupcakes, cookies, and pies</strong>. Our
+            cakes come in a <em>range of sizes</em>, from small individual
+            servings to large celebration cakes that can serve up to 20 people
+            or more! We can customize your cake to <em>suit any occasion</em>,
+            whether it&apos;s a{" "}
+            <strong>wedding, birthday, or any other special event</strong>.
+          </p>
+          <p>
+            Our cupcakes are the perfect addition to any party or gathering. We
+            have a <strong>variety of flavors</strong> to choose from, including
+            classic <em>vanilla</em> and <em>chocolate</em>, as well as offering
+            more unique flavors like <em>red velvet</em> and{" "}
+            <em>Stacy&apos;s famous carrot cake</em>. Stacy even offers a
+            variety of <strong>custom flavor options</strong> and combinations
+            to choose from!
+          </p>
+          <p>
+            It&apos;s obvious that{" "}
+            <strong>Stacy bakes with passion and skill</strong>, and aims to
+            impress with <em>each and every bite</em>. She is meticulous in
+            preparing each item, and{" "}
+            <strong>refuses to deliver anything less than exceptional</strong>.
+          </p>
+          <p>
+            We invite you to come and{" "}
+            <em>Experience The Magic of Stacy&apos;s Cakes</em>, so{" "}
+            <strong>place your order today</strong> and indulge in the{" "}
+            <em>sweetest</em> treats on Long Island!
+          </p>
         </section>
       </div>
     </Main>

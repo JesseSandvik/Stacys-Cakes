@@ -145,21 +145,36 @@ function Contact(): React.ReactElement {
               </li>
               <li>
                 <Heading level={3}>contact us by email:</Heading>
-                <ExtLink href="mailto: stacyscakesny@gmai.com">
+                <ExtLink
+                  href="mailto: stacyscakesny@gmai.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  title="email"
+                >
                   <i className="fa-solid fa-square-envelope" />
                   <Heading level={4}>stacyscakesny@gmail.com</Heading>
                 </ExtLink>
               </li>
               <li>
                 <Heading level={3}>like us on facebook:</Heading>
-                <ExtLink href="https://www.facebook.com/stacyscakesandcupcakes">
+                <ExtLink
+                  href="https://www.facebook.com/stacyscakesandcupcakes"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  title="Facebook"
+                >
                   <i className="fa-brands fa-facebook-square" />
                   <Heading level={4}>Stacy&apos;s Cakes NY</Heading>
                 </ExtLink>
               </li>
               <li>
                 <Heading level={3}>follow us on instagram:</Heading>
-                <ExtLink href="https://www.instagram.com/stacyscakesny">
+                <ExtLink
+                  href="https://www.instagram.com/stacyscakesny"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  title="Instagram"
+                >
                   <i className="fa-brands fa-instagram-square" />
                   <Heading level={4}>STACYSCAKESNY</Heading>
                 </ExtLink>
