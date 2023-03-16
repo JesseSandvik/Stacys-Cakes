@@ -9,6 +9,7 @@
   --secondary: #f1f1f1;
   --accent-bright: #ff5784;
   --accent-medium: #d36582;
+  --border-radius: 8px;
 }
 
 a {

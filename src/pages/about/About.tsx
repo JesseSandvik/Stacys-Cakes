@@ -1,8 +1,10 @@
 import React from "react";
 
 import Heading from "../../components/atoms/heading/Heading";
+import Image from "../../components/atoms/image/Image";
 import Main from "../../components/organisms/main/Main";
 
+import CartoonStacy from "../../images/cartoon-stacy.jpeg";
 import "./About.css";
 
 function About(): React.ReactElement {
@@ -12,25 +14,29 @@ function About(): React.ReactElement {
         <Heading level={1}>About Us</Heading>
       </div>
       <div className="About-body">
+        <div className="About-profile-img">
+          <Image alt="a cartoon representation of Stacy" src={CartoonStacy} />
+        </div>
         <section>
           <p>
-            Welcome to <em>Stacy&apos;s Cakes</em>, where we specialize in
-            creating{" "}
+            Welcome to <em>Stacy&apos;s Cakes New York</em>, where we specialize
+            in creating{" "}
             <strong>delicious and visually stunning baked goods</strong> for any
-            occasion! <em>Stacy&apos;s Cakes</em> is owned and operated by Stacy
-            herself, who takes <em>great pride</em> in using only the
+            occasion! <em>Stacy&apos;s Cakes New York</em> is owned and operated
+            by Stacy herself, who takes <em>great pride</em> in using only the
             <strong> highest quality ingredients</strong>. Stacy bakes
             <strong> everything from scratch</strong> to ensure that her
             customers receive only the <em>freshest</em> and{" "}
             <em>most delicious</em> baked goods.
           </p>
           <p>
-            At <em>Stacy&apos;s Cakes</em>, we offer a wide variety of goodies,
-            including <strong>cakes, cupcakes, cookies, and pies</strong>. Our
-            cakes come in a <em>range of sizes</em>, from small individual
-            servings to large celebration cakes that can serve up to 20 people
-            or more! We can customize your cake to <em>suit any occasion</em>,
-            whether it&apos;s a{" "}
+            At <em>Stacy&apos;s Cakes New York</em>, we offer a wide variety of
+            goodies, including{" "}
+            <strong>cakes, cupcakes, cookies, and pies</strong>. Our cakes come
+            in a <em>range of sizes</em>, from small individual servings to
+            large celebration cakes that can serve up to 20 people or more! We
+            can customize your cake to <em>suit any occasion</em>, whether
+            it&apos;s a{" "}
             <strong>wedding, birthday, or any other special event</strong>.
           </p>
           <p>
@@ -51,7 +57,7 @@ function About(): React.ReactElement {
           </p>
           <p>
             We invite you to come and{" "}
-            <em>Experience The Magic of Stacy&apos;s Cakes</em>, so{" "}
+            <em>Experience The Magic of Stacy&apos;s Cakes New York</em>, so{" "}
             <strong>place your order today</strong> and indulge in the{" "}
             <em>sweetest</em> treats on Long Island!
           </p>

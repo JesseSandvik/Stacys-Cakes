@@ -1,16 +1,17 @@
 .About-body {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  grid-template-columns: auto 1fr;
+  margin: 1rem;
 }
 
 .About-body section {
-  border: 1px solid var(--accent-bright);
+  border: 4px solid var(--accent-bright);
   border-radius: 4px;
   display: grid;
-  margin: 16px;
-  padding: 16px;
 }
 
 .About-body section p {
+  font-size: 1.25rem;
   line-height: 28px;
 }
