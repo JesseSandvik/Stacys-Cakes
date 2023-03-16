@@ -9,17 +9,21 @@ h6 {
 
 .About h1,
 .About h2,
+.Menu h1,
+.Menu h2,
 .Contact h1,
 .Contact h2 {
   color: var(--secondary);
 }
 
 .About h1,
+.Menu h1,
 .Contact h1 {
   border-bottom: 4px solid var(--accent-bright);
 }
 
 .About h2,
+.Menu h2,
 .Contact h2 {
   border-bottom: 4px solid var(--accent-bright);
 }

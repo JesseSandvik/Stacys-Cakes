@@ -5,6 +5,7 @@
 }
 
 .About,
+.Menu,
 .Contact {
   background-color: #00000099;
   box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.33);
@@ -15,11 +16,13 @@
 }
 
 .About-heading,
+.Menu-heading,
 .Contact-heading {
   padding: 16px;
 }
 
 .About section,
+.Menu section,
 .Contact section {
   color: var(--secondary);
 }
