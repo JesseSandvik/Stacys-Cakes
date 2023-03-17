@@ -11,19 +11,44 @@
   border: 2px solid var(--accent-bright);
   display: grid;
   gap: 16px;
-  grid-template-columns: auto auto 1fr;
+  grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr;
-  padding: 16px;
+  padding: 36px;
 }
 
 .Menu-card-img {
+  align-items: center;
+  display: flex;
   grid-column: 1 / 1;
   grid-row: 1 / -1;
+  justify-content: center;
 }
 
 .Menu-card-title {
-  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.Menu-card-title h4 {
+  border-bottom: 2px solid var(--accent-bright);
+  font-size: 1.75rem;
   font-weight: bold;
   grid-column: 2 / -1;
   grid-row: 1 / 1;
+  padding-bottom: 16px;
+}
+
+.Menu-card-description {
+  font-size: 1.2rem;
+}
+
+.Menu-card-description-prices {
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+  font-weight: bold;
+  justify-content: space-evenly;
+  gap: 16px;
+  padding: 16px;
 }

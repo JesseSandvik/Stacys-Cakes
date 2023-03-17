@@ -25,21 +25,20 @@ function Menu(): React.ReactElement {
             <div className="Menu-card-img">
               <Image alt="Stacy's Famous Carrot Cake" src={CarrotCake} />
             </div>
-            <Heading level={4} className="Menu-card-title">
-              Stacy&apos;s Famous Carrot Cake
-            </Heading>
+            <div className="Menu-card-title">
+              <Heading level={4}>Stacy&apos;s Famous Carrot Cake</Heading>
+            </div>
             <div className="Menu-card-description">
               <p>
-                <strong>This one is a fan favorite!</strong>
-              </p>
-              <p>
-                stacy&apos;s famous rich spiced cake is loaded with nuts,
+                Stacy&apos;s famous rich spiced cake is loaded with nuts,
                 raisins, and more! She tops it off with a delightful cream
                 cheese frosting that perfectly compliments this delicious
                 masterpiece!
               </p>
-              <p>6 Inch Stacy&apos;s Famous Carrot Cake - $15</p>
-              <p>8 Inch Stacy&apos;s Famous Carrot Cake - $30</p>
+              <span className="Menu-card-description-prices">
+                <p>6 Inch Cake: $15</p>
+                <p>8 Inch Cake: $30</p>
+              </span>
             </div>
           </div>
           <dl>
