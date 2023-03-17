@@ -44,6 +44,19 @@ function Menu(): React.ReactElement {
             <dd>6 Inch Four-Layer Chocolate Cake - $15</dd>
             <dd>8 Inch Four-Layer Chocolate Cake - $30</dd>
           </dl>
+        </section>
+      </div>
+    </Main>
+  );
+}
+
+export default Menu;
+
+{/* <dl>
+            <dt>Four-Layer Cookies & Cream Cake</dt>
+            <dt>the best of both worlds!</dt>
+            <dd />
+          </dl>
           <p>
             Cookies and Cream Cake Four layers of chocolate cake layered with
             cookies and cream filling. Surrounded by chocolate cookie crumbs.
@@ -71,11 +84,5 @@ function Menu(): React.ReactElement {
             course! Moist and delicate cake with Tons! Of crumbs! $14 Flour less
             Chocolate Cake More like a brownie but lighter in texture. Topped
             with fresh whipped cream and more chocolate! $14
-          </p>
-        </section>
-      </div>
-    </Main>
-  );
+          </p> */
 }
-
-export default Menu;
