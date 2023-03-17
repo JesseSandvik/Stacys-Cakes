@@ -6,6 +6,13 @@
   max-width: 100%;
 }
 
+.Menu-card-img img {
+  border-radius: var(--border-radius);
+  height: 156px;
+  margin: auto;
+  width: 156px;
+}
+
 .delivery-map img {
   border-radius: var(--border-radius);
   margin: auto;

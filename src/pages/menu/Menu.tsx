@@ -1,7 +1,11 @@
 import React from "react";
 
 import Heading from "../../components/atoms/heading/Heading";
+import Image from "../../components/atoms/image/Image";
 import Main from "../../components/organisms/main/Main";
+
+import CarrotCake from "../../images/cake-carrot.jpg";
+import "./Menu.css";
 
 function Menu(): React.ReactElement {
   return (
@@ -17,20 +21,27 @@ function Menu(): React.ReactElement {
             <dd>6 inch cakes serves up to 10 people</dd>
             <dd>8 inch cakes serves up to 20 people</dd>
           </dl>
-          <dl>
-            <dt>Stacy&apos;s Famous Carrot Cake</dt>
-            <dd>
-              <strong>this one is a fan favorite!</strong> You&apos;ll see why
-              on the first bite!
-            </dd>
-            <dd>
-              stacy&apos;s famous rich spiced cake is loaded with nuts, raisins,
-              and more! She tops it off with a delightful cream cheese frosting
-              that perfectly compliments this delicious masterpiece!
-            </dd>
-            <dd>6 Inch Stacy&apos;s Famous Carrot Cake - $15</dd>
-            <dd>8 Inch Stacy&apos;s Famous Carrot Cake - $30</dd>
-          </dl>
+          <div className="Menu-card">
+            <div className="Menu-card-img">
+              <Image alt="Stacy's Famous Carrot Cake" src={CarrotCake} />
+            </div>
+            <Heading level={4} className="Menu-card-title">
+              Stacy&apos;s Famous Carrot Cake
+            </Heading>
+            <div className="Menu-card-description">
+              <p>
+                <strong>This one is a fan favorite!</strong>
+              </p>
+              <p>
+                stacy&apos;s famous rich spiced cake is loaded with nuts,
+                raisins, and more! She tops it off with a delightful cream
+                cheese frosting that perfectly compliments this delicious
+                masterpiece!
+              </p>
+              <p>6 Inch Stacy&apos;s Famous Carrot Cake - $15</p>
+              <p>8 Inch Stacy&apos;s Famous Carrot Cake - $30</p>
+            </div>
+          </div>
           <dl>
             <dt>Four-Layer Chocolate Cake</dt>
             <dd>
@@ -52,7 +63,8 @@ function Menu(): React.ReactElement {
 
 export default Menu;
 
-{/* <dl>
+{
+  /* <dl>
             <dt>Four-Layer Cookies & Cream Cake</dt>
             <dt>the best of both worlds!</dt>
             <dd />
