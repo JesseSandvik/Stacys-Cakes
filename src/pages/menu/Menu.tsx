@@ -15,9 +15,9 @@ function Menu(): React.ReactElement {
       </div>
       <div className="Menu-body">
         <section>
-          <Heading level={2}>bakery menu</Heading>
-          <dl>
-            <dt>servings per cake:</dt>
+          <Heading level={2}>cakes</Heading>
+          <dl className="cake-size-list">
+            <dt>Servings per cake:</dt>
             <dd>6 inch cakes serves up to 10 people</dd>
             <dd>8 inch cakes serves up to 20 people</dd>
           </dl>
