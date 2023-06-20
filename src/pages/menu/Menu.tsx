@@ -21,39 +21,51 @@ function Menu(): React.ReactElement {
             <dd>6 inch cakes serves up to 10 people</dd>
             <dd>8 inch cakes serves up to 20 people</dd>
           </dl>
-          <div className="Menu-card">
-            <div className="Menu-card-img">
-              <Image alt="Stacy's Famous Carrot Cake" src={CarrotCake} />
-            </div>
-            <div className="Menu-card-title">
-              <Heading level={4}>Stacy&apos;s Famous Carrot Cake</Heading>
-            </div>
-            <div className="Menu-card-description">
-              <p>
-                Stacy&apos;s famous rich spiced cake is loaded with nuts,
-                raisins, and more! She tops it off with a delightful cream
-                cheese frosting that perfectly compliments this delicious
-                masterpiece!
-              </p>
-              <span className="Menu-card-description-prices">
-                <p>6 Inch Cake: $15</p>
-                <p>8 Inch Cake: $30</p>
-              </span>
-            </div>
-          </div>
-          <dl>
-            <dt>Four-Layer Chocolate Cake</dt>
-            <dd>
-              <strong>attention all chocoholics!</strong>
-            </dd>
-            <dd>
-              Indulge in our decadent four-layer chocolate cake with chocolate
-              icing, a mouth-watering dessert that will satisfy even the most
-              intense chocolate cravings.
-            </dd>
-            <dd>6 Inch Four-Layer Chocolate Cake - $15</dd>
-            <dd>8 Inch Four-Layer Chocolate Cake - $30</dd>
-          </dl>
+          <ul>
+            <li>
+              <div className="Menu-card">
+                <div className="Menu-card-img">
+                  <Image alt="Stacy's Famous Carrot Cake" src={CarrotCake} />
+                </div>
+                <div className="Menu-card-title">
+                  <Heading level={4}>Stacy&apos;s Famous Carrot Cake</Heading>
+                </div>
+                <div className="Menu-card-description">
+                  <p>
+                    Stacy&apos;s famous rich spiced cake is loaded with nuts,
+                    raisins, and more! She tops it off with a delightful cream
+                    cheese frosting that perfectly compliments this delicious
+                    masterpiece!
+                  </p>
+                  <span className="Menu-card-description-prices">
+                    <p>6 Inch Cake: $15</p>
+                    <p>8 Inch Cake: $30</p>
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div className="Menu-card">
+                <div className="Menu-card-img">
+                  <Image alt="Stacy's Famous Carrot Cake" src={CarrotCake} />
+                </div>
+                <div className="Menu-card-title">
+                  <Heading level={4}>Four-Layer Chocolate Cake</Heading>
+                </div>
+                <div className="Menu-card-description">
+                  <p>
+                    Indulge in our decadent four-layer chocolate cake with
+                    chocolate icing, a mouth-watering dessert that will satisfy
+                    even the most intense chocolate cravings.
+                  </p>
+                  <span className="Menu-card-description-prices">
+                    <p>6 Inch Cake: $15</p>
+                    <p>8 Inch Cake: $30</p>
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
         </section>
       </div>
     </Main>

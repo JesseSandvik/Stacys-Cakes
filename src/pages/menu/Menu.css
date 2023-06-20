@@ -43,6 +43,12 @@
   padding: 16px;
 }
 
+.Menu-body section ul {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+}
+
 .Menu-body section .cake-size-list {
   display: grid;
   font-size: 1.5rem;

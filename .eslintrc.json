@@ -1,11 +1,12 @@
 {
-  "plugins": ["testing-library", "jest-dom"],
+  "plugins": ["testing-library", "jest-dom", "prettier"],
   "extends": [
     "airbnb",
     "airbnb-typescript-prettier",
     "airbnb/hooks",
     "react-app",
     "react-app/jest",
+    "prettier",
     "plugin:@typescript-eslint/recommended",
     "plugin:testing-library/react",
     "plugin:jest-dom/recommended"
@@ -15,6 +16,7 @@
   },
   "rules": {
     "react/react-in-jsx-scope": "off",
-    "no-console": "off"
+    "no-console": "off",
+    "prettier/prettier": ["error", { "endOfLine": "auto" }]
   }
 }
