@@ -20,6 +20,7 @@
   display: grid;
   font-size: 2rem;
   font-weight: bold;
+  padding: 16px;
 }
 
 #home-body {
@@ -62,17 +63,31 @@
 }
 
 #home-banner {
+  background: unset;
+  border: unset;
+  box-shadow: unset;
+  color: var(--secondary);
   flex-direction: column;
   grid-column: 3 / 7;
   grid-row: 10 / 12;
 }
 
+#home-banner h2 {
+  font-size: 2rem;
+}
+
 #home-banner-social-icons {
   display: flex;
-  gap: 16px;
+  gap: 32px;
+  padding: 16px;
+}
+
+#home-banner-social-icons i {
+  font-size: 3rem;
 }
 
 #home-img {
+  background: unset;
   grid-column: 8 / 12;
   grid-row: 2 / 12;
 }

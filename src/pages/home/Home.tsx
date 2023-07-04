@@ -40,9 +40,7 @@ function Home(): React.ReactElement {
         </div>
       </section>
       <section id="home-banner">
-        <p>
-          <strong>Now serving Nassau and Suffolk county!</strong>
-        </p>
+        <Heading level={2}>Now serving Nassau and Suffolk county!</Heading>
         <div id="home-banner-social-icons">
           <ExtLink
             className="social-icon-link"
