@@ -52,3 +52,7 @@
   grid-column: 5 / 12;
   grid-row: 2 / -1;
 }
+
+#about-body p {
+  padding: 4px;
+}
