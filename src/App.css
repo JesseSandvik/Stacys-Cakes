@@ -1,17 +1,18 @@
 .App {
+  background-color: #00000099;
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
 
+#home,
 .About,
 .Menu,
 .Contact {
-  background-color: #00000099;
-  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.33);
   display: grid;
-  grid-template-rows: auto 1fr;
-  margin: 32px 0;
+  gap: 16px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
   padding: 16px;
 }
 

@@ -12,27 +12,23 @@ import "./Home.css";
 
 function Home(): React.ReactElement {
   return (
-    <Main className="Home">
-      <section className="Home-body-greeting">
-        <div className="heading">
-          <Heading level={1}>Experience The Magic!</Heading>
-        </div>
-        <div className="body">
+    <Main id="home">
+      <section id="home-body">
+        <Heading level={1}>Experience The Magic!</Heading>
+        <div id="home-body-description">
           <p>
-            Stacy&apos;s custom <em>handmade</em>{" "}
-            <span className="text-accent">cakes</span>,{" "}
-            <span className="text-accent">cupcakes</span>, &{" "}
-            <span className="text-accent">treats</span> are prepared{" "}
+            Stacy&apos;s custom <em>handmade</em> <span>cakes</span>,{" "}
+            <span>cupcakes</span>, & <span>treats</span> are prepared{" "}
             <em>fresh</em> from her kitchen & delivered straight to your
             doorstep!
           </p>
         </div>
-        <div className="btn-group">
+        <div id="home-body-btns">
+          <Button className="default-page-btn">view our gallery</Button>
           <Button className="default-page-btn">view our menu</Button>
-          <Button className="default-page-btn">view custom options</Button>
         </div>
-        <div className="policy-info">
-          <p>Ready to order?</p>
+        <div id="home-body-contact">
+          <Heading level={4}>Ready to order?</Heading>
           <p>
             {" "}
             Review our{" "}
@@ -43,11 +39,11 @@ function Home(): React.ReactElement {
           </p>
         </div>
       </section>
-      <section className="Home-body-notice">
+      <section id="home-banner">
         <p>
           <strong>Now serving Nassau and Suffolk county!</strong>
         </p>
-        <div className="Home-body-notice-social-icons">
+        <div id="home-banner-social-icons">
           <ExtLink
             className="social-icon-link"
             href="mailto: stacyscakesny@gmai.com"
@@ -77,7 +73,7 @@ function Home(): React.ReactElement {
           </ExtLink>
         </div>
       </section>
-      <section className="Home-body-image-container">
+      <section id="home-img">
         <Image alt="Ornate white frosted cake" src={WhiteCake} />
       </section>
     </Main>
