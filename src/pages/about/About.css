@@ -16,7 +16,6 @@
   background-size: cover;
   border: 4px solid var(--accent-bright);
   border-radius: var(--border-radius);
-  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
   display: grid;
   font-size: 2rem;
   font-weight: bold;
@@ -35,6 +34,7 @@
 
 #about-img {
   background: unset;
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
   grid-column: 2 / 5;
   grid-row: 2 / -1;
 }
@@ -46,6 +46,7 @@
 }
 
 #about-body {
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
   display: flex;
   flex-direction: column;
   gap: 16px;

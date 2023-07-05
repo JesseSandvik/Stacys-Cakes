@@ -7,11 +7,20 @@
 
 #home,
 #about,
-.Menu,
+#menu,
 #contact {
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
   padding: 16px;
+}
+
+#home,
+#menu {
+  grid-template-rows: repeat(12, 1fr);
+}
+
+#about,
+#contact {
+  grid-template-rows: auto repeat(11, 1fr);
 }
