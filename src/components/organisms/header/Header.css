@@ -15,13 +15,13 @@ header nav {
 }
 
 header nav .active {
-  border-bottom: 4px solid var(--accent-bright);
+  border-bottom: 1px solid var(--accent-bright);
   padding-bottom: 4px;
 }
 
 header nav > * {
   align-items: center;
-  background-color: var(--primary);
+  background-color: black;
   box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
   color: var(--secondary);
   display: flex;
@@ -32,6 +32,10 @@ header nav ul {
   height: 72px;
   justify-content: space-evenly;
   list-style-type: none;
+}
+
+header nav ul li a:hover {
+  color: var(--accent-medium);
 }
 
 header nav .Header-left-list {
@@ -63,7 +67,7 @@ header nav .Header-center-logo a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 4px solid var(--primary);
+  border: 2px solid var(--accent-bright);
   border-radius: 16px;
   color: var(--primary);
   display: flex;
@@ -74,7 +78,6 @@ header nav .Header-center-logo a {
 }
 
 header nav .Header-center-logo a .title {
-  border-bottom: 4px solid var(--accent-bright);
   font-family: Corinthia, Arial, Helvetica, sans-serif;
   font-size: 3rem;
   margin-bottom: 4px;
@@ -82,9 +85,11 @@ header nav .Header-center-logo a .title {
 }
 
 header nav .Header-center-logo a .location {
+  color: var(--accent-bright);
   font-weight: bold;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
+  padding: .5rem;
 }
 
 header nav .Header-right-list {

@@ -14,14 +14,11 @@ function Home(): React.ReactElement {
   return (
     <Main id="home">
       <section id="home-body">
-        <Heading level={1}>Experience The Magic!</Heading>
-        <div id="home-body-description">
-          <p>
-            Stacy&apos;s custom <em>handmade</em> <span>cakes</span>,{" "}
-            <span>cupcakes</span>, & <span>treats</span> are prepared{" "}
-            <em>fresh</em> from her kitchen & delivered straight to your
-            doorstep!
-          </p>
+        <div id="home-body-heading">
+          <Heading level={1}>Experience The Magic</Heading>
+        </div>
+        <div id="home-banner">
+          <Heading level={2}>Now Serving Nassau and Suffolk county!</Heading>
         </div>
         <div id="home-body-btns">
           <Button className="default-page-btn">view our gallery</Button>
@@ -35,12 +32,8 @@ function Home(): React.ReactElement {
             <NavigationLink path="/contact">
               booking policy & contact information
             </NavigationLink>
-            .
           </p>
         </div>
-      </section>
-      <section id="home-banner">
-        <Heading level={2}>Now serving Nassau and Suffolk county!</Heading>
         <div id="home-banner-social-icons">
           <ExtLink
             className="social-icon-link"
@@ -71,9 +64,9 @@ function Home(): React.ReactElement {
           </ExtLink>
         </div>
       </section>
-      <section id="home-img">
+      {/* <section id="home-img">
         <Image alt="Ornate white frosted cake" src={WhiteCake} />
-      </section>
+      </section> */}
     </Main>
   );
 }

@@ -15,11 +15,11 @@
   padding: 16px;
 }
 
-#home,
-#menu {
+#home {
   grid-template-rows: repeat(12, 1fr);
 }
 
+#menu,
 #about,
 #contact {
   grid-template-rows: auto repeat(11, 1fr);

@@ -1,10 +1,9 @@
 footer {
   align-items: center;
+  font-weight: bold;
   display: flex;
+  font-size: 1rem;
   justify-content: center;
   padding: 16px;
 }
 
-footer .Footer-copyright .bold {
-  font-weight: bold;
-}

@@ -9,7 +9,7 @@ function Header(): React.ReactElement {
       <nav>
         <ul className="Header-left-list">
           <li>
-            <NavigationLink path="/about">about</NavigationLink>
+            <NavigationLink path="/menu">menu</NavigationLink>
           </li>
           <li>
             <NavigationLink path="/gallery">gallery</NavigationLink>
@@ -23,7 +23,7 @@ function Header(): React.ReactElement {
         </div>
         <ul className="Header-right-list">
           <li>
-            <NavigationLink path="/menu">menu</NavigationLink>
+            <NavigationLink path="/about">about</NavigationLink>
           </li>
           <li>
             <NavigationLink path="/contact">contact</NavigationLink>

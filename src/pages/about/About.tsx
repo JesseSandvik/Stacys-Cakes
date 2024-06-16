@@ -10,7 +10,7 @@ import "./About.css";
 function About(): React.ReactElement {
   return (
     <Main id="about">
-      <Heading level={1}>About Us</Heading>
+      <Heading level={1}>About Stacy&apos;s Cakes</Heading>
       <div id="about-img">
         <Image alt="a cartoon representation of Stacy" src={CartoonStacy} />
       </div>
