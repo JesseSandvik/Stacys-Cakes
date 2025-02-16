@@ -4,25 +4,3 @@ button {
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
 }
-
-.default-page-btn {
-  background-color: black;
-  border: 2px solid var(--accent-bright);
-  border-radius: 8px;
-  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.3);
-  color: var(--secondary);
-  font-size: 1.2rem;
-  font-weight: bold;
-  height: 60px;
-  letter-spacing: 0.033rem;
-  opacity: 0.9;
-  text-transform: capitalize;
-  transition: 0.4s ease-in-out;
-  width: 300px;
-}
-
-.default-page-btn:hover {
-  color: var(--accent-bright);
-  opacity: 1;
-  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
-}

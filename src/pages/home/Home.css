@@ -55,6 +55,31 @@
   font-size: 2rem;
 }
 
+.default-page-btn {
+  align-items: center;
+  background-color: black;
+  border: 2px solid var(--accent-bright);
+  border-radius: 8px;
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.3);
+  color: var(--secondary);
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 60px;
+  justify-content: center;
+  letter-spacing: 0.033rem;
+  opacity: 0.9;
+  text-transform: capitalize;
+  transition: 0.4s ease-in-out;
+  width: 300px;
+}
+
+.default-page-btn:hover {
+  color: var(--accent-bright);
+  opacity: 1;
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+}
+
 #home-banner-social-icons {
   display: flex;
   justify-content: center;
@@ -73,7 +98,7 @@
 }
 
 #home-img img {
-  border-radius: 4px;
+  border-radius: 12px;
   height: 100%;
   width: 100%;
 }

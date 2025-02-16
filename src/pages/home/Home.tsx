@@ -21,8 +21,12 @@ function Home(): React.ReactElement {
           <Heading level={2}>Now Serving Nassau and Suffolk county!</Heading>
         </div>
         <div id="home-body-btns">
-          <Button className="default-page-btn">view our gallery</Button>
-          <Button className="default-page-btn">view our menu</Button>
+          <NavigationLink className="default-page-btn" path="/menu">
+            view our menu
+          </NavigationLink>
+          <NavigationLink className="default-page-btn" path="/gallery">
+            view our gallery
+          </NavigationLink>
         </div>
         <div id="home-body-contact">
           <Heading level={4}>Ready to order?</Heading>
@@ -64,9 +68,9 @@ function Home(): React.ReactElement {
           </ExtLink>
         </div>
       </section>
-      {/* <section id="home-img">
+      <section id="home-img">
         <Image alt="Ornate white frosted cake" src={WhiteCake} />
-      </section> */}
+      </section>
     </Main>
   );
 }

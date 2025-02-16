@@ -17,24 +17,27 @@
   display: flex;
   grid-column: 1 / 7;
   grid-row: 1 / 1;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 #menu h2 {
+  border-bottom: 2px solid var(--accent-bright);
   color: var(--accent-bright);
+  height: 80px;
 }
 
 #menu #size-list {
-  border-bottom: 1px solid var(--accent-bright);
-  border-top: 1px solid var(--accent-bright);
   font-size: 1.25rem;
-  padding: 1rem;
+}
+
+#menu #size-list dt {
+  padding: 2px;
 }
 
 #menu #size-list dd {
   color: var(--accent-medium);
   margin: 0 1rem;
-  text-decoration: underline;
+  padding: 2px;
 }
 
 #menu ul {
